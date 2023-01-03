@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+   
+
+{% block content %}
+ <table class="ukuran container table table-striped table-bordered" >
+    <thead>
+      <tr class="table-dark">
+        <th scope="col">No</th>
+        <th scope="col">NPM</th>
+        <th scope="col">Nama</th>
+        <th scope="col">Alamat</th>
+        <th scope="col">Tanggal Lahir</th>
+        <th scope="col">Kelas</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for rohil in rohil %}
+        <tr>
+        <th scope="row">{{ rohil.id }}</th>
+        <td>{{ rohil.npm }}</td>
+        <td>{{ rohil.nama }}</td>
+        <td>{{ rohil.alamat }}</td>
+        <td>{{ rohil.tetala }}</td>
+        <td>{{ rohil.kelas }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock  %}
